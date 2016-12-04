@@ -78,6 +78,7 @@ void startsys(){
     myvhard=(unsigned char *)malloc(SIZE);
     memset(myvhard, 0, SIZE);
     fp=fopen(filename,"r");
+    
     if(fp){
         fread(buffer,SIZE,1,fp);
         fclose(fp);
